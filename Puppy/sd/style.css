@@ -1,0 +1,540 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    list-style: none;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+    background: url("/img/job562-nunoon-10.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(50, 50, 50, 0.705), transparent);
+    z-index: 100;
+}
+.nav1{
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background:  rgba(151, 142, 139, 0.774);
+    /* background: url(/img/selective-focus-shot-adorable-kooikerhondje-dog.jpg); */
+    z-index: 100;
+}
+.nav-logo p{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid #fff;
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    background: rgba(255, 255, 255, 0.7);
+}
+.btn.btn.white-btn:hover{
+    background: rgba(255, 255, 255, 0.5);
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    width: 512px;
+    height: 500px;
+    overflow: hidden;
+    z-index: 2;
+}
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    background: rgba(39, 39, 39, 0.4);
+    padding: 3rem;
+    border-radius: 50px;
+}
+.register-container{
+    position: absolute;
+    right: -520px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+    background: rgba(39, 39, 39, 0.4);
+    padding: 3rem;
+    border-radius: 50px;
+
+}
+.top span{
+    color: #fff;
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: #fff;
+    margin-left: 5px;
+}
+header{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 0 0 10px 0;
+}
+.two-forms{
+    display: flex;
+    gap: 10px;
+}
+.input-field{
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    padding: 0 10px 0 45px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+.input-box i{
+    position: relative;
+    top: -35px;
+    left: 17px;
+    color: #fff;
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    height: 45px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.submit:hover{
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+.two-col{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display: flex;
+    gap: 5px;
+}
+.two label a{
+    text-decoration: none;
+    color: #fff;
+}
+.two label a:hover{
+    text-decoration: underline;
+}
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.2);
+        width: 100%;
+        height: 90vh;
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: #fff;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .nav-menu-btn i:hover{
+        background: rgba(255, 255, 255, 0.15);
+    }
+}
+@media only screen and (max-width: 540px) {
+    .wrapper{
+        min-height: 100vh;
+    }
+    .form-box{
+        width: 100%;
+        height: 500px;
+    }
+    .register-container, .login-container{
+        width: 100%;
+        padding: 0 20px;
+    }
+    .register-container .two-forms{
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.home{
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    background: url("/img/selective-focus-shot-adorable-kooikerhondje-dog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    overflow: hidden;
+}
+.home-wrapper{
+    display: grid;
+    grid-template-columns: 2.5fr 1.4fr;
+}
+.home1-wrapper{
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr;
+}
+.home1{
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    background: url("/img/close-up-hands-petting-dog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    overflow: hidden;
+}
+.home-text{
+    position: relative;
+    color: #fff;
+    max-width: 35rem;
+    /* left: 61rem; */
+    font-size: 1.6rem;
+}
+.home1-text{
+    position: relative;
+    color: #fff;
+    max-width: 50rem;
+    /* left: 12rem; */
+    font-size: 1.6rem;
+    background: rgba(39, 39, 39, 0.4);
+    padding: 2rem;
+    border-radius: 30px;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+.big{
+    margin-bottom: 1rem;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+.about{
+    display: flex;
+    position: relative;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    background: url("/img/front-view-cute-greyhound-dog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    overflow: hidden;
+}
+.dap{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.dap1{
+    font-size: 1.3rem;
+}
+.sub{
+    width: 100%;
+    background: rgba(170, 165, 165, 0.4);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sub-container{
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.sub-container:nth-of-type(even){
+    background: #f5f5f5;
+    width: 100%;
+    padding-top: 1.5rem;
+}
+.sub-text{
+    margin-left: 1.5rem;
+    max-width: 72rem;
+}
+.sub-text h3{
+    font-weight: 200;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+.sub-text p{
+    text-align: left;
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 2;
+}
+.sub-text-img{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+}
+.sub-text-img img{
+    height: auto;
+    width: 60%;
+}
+
+@media screen and (min-width: 760px) {
+    .sub {
+      align-items: center;
+    }
+    .sub-img img {
+      width: 29rem;
+      height: 26rem;
+    }
+    .sub-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .sub-container:nth-of-type(even) {
+      background: #9c9393;
+      width: 100%;
+      flex-direction: row-reverse;
+    }
+    .sub-text {
+      max-width: 72rem;
+    }
+    .sub-text h3 {
+      font-size: 2rem;
+      font-weight: 100;
+    }
+    .sub-text p {
+      max-width: 40rem;
+      font-size: 1.5rem;
+    }
+  }
+
+.burde{
+    padding: 0.7rem 1rem;
+    margin-top: 1rem;
+    border: 1px solid #2b2b2b;
+    display: inline-block;
+    color: #fff;
+    background: #2b2b2b;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.burde:hover{
+    transform: scale(1.1);
+}
+
+.contactForm{
+    width: 100%;
+    padding: 40px;
+    /* margin-bottom: 12rem; */
+    background: rgba(170, 165, 165, 0.4);
+}
+.contactForm h2{
+    margin-top: 5rem;
+    font-size: 30px;
+    color: #2b2b2b;
+}
+.inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+}
+.inputBox input{
+    width: 50rem;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #2b2b2b;
+    background: transparent;
+}
+.inputBox textarea{
+    width: 100%;
+    height: 15rem;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #2b2b2b;
+    padding: 1rem;
+    border-radius: 2rem;
+    background: transparent;
+}
+.inputBox a{
+    color: #fff;
+    border: 1px solid #9c9393;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: 3rem;
+    display: inline-block;
+    background: #9c9393;
+    text-decoration: none;
+}
+.contactForm-icon{
+    margin-left: 8rem;
+}
+.contactForm-icon li{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.3rem;
+    align-items: center;
+}
+.contactForm-icon i{
+    font-size: 2rem;
+    color: #fff;
+    border: 1px solid #9c9393;
+    border-radius: 50%;
+    padding: 1rem 1rem;
+    background: #9c9393;
+    height: 60px;
+    min-width: 60px;
+    text-align: center;
+    justify-content: center;
+}
+.contactForm-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contactForm-icon p{
+    font-size: 1.5rem;
+}
+
+.footer{
+    background: rgba(151, 142, 139, 0.774);
+    width: 100%;
+}
+.footer-icon{
+    padding: 2rem 7rem;
+    display: flex;
+    justify-content: center;
+}
+.footer-icon ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+.footer-icon li{
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    gap: 1rem;
+}
+.footer-icon i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer-icon p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}

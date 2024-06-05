@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PupPals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper1">
+        <nav class="nav1">
+            <div class="nav-logo">
+                <p>PupPals</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="./home.html" class="link">Home</a></li>
+                    <li><a href="./about.html" class="link">About</a></li>
+                    <li><a href="./dogs.html" class="link active">Dogs</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <section class="sub">
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-2.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Fusen</h3>
+                <p>Fusen is a beagle, he is friendly and energetic. Beagles are active dogs that require ample space to move around. A home with a fenced yard is ideal but they can adapt also in a apartment.</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-3.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Damian</h3>
+                <p>Damian is a pug. He's small, charming, playful and have a loving personality. Damian is well suited to apartment living due to his small size and moderate activity levels. He is also sensitive to extreme heat</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-4.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Steph</h3>
+                <p>Steph is a pomeranian. She's lively, affectionate and intelligent. Shes's well suited to apartment living due to her small size. She can also adapt to different climates but should protected from extreme temperature.</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-6.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Matikas</h3>
+                <p>Matikas is a bichon frise. He's small and cheerful. Bichon Frises are adaptable to both apartment and house living. He can also adapt to different climates but should protected from extreme temperature.</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-7.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Andrei</h3>
+                <p>Andrei is a Husky. He's a large dog and also strong. Owner with a large home, securely fenced yard is ideal to accomodate their high energy. He is well-suited to cold climates due to his thick coat.</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="sub-img">
+                <img src="/img/dawg-8.png" alt="">
+            </div>
+            <div class="sub-text">
+                <h3>Jansen</h3>
+                <p>Jansen is a beagle, he is friendly and energetic. Beagles are active dogs that require ample space to move around. A home with a fenced yard is ideal but they can adapt also in a apartment.</p>
+                <a href="" class="burde">Apply</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-icon">
+                    <ul>
+                        <li>
+                            <i class="bx bx-phone"></i>
+                            <p>0912-345-6789</p>
+                        </li>
+                        <li>
+                            <i class="bx bx-envelope"></i>
+                            <p>puppals@gmail.com</p>
+                        </li>
+                        <li>
+                            <i class="bx bx-current-location"></i>
+                            <p>San Pablo, Laguna</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-facebook-circle' ></i>
+                            <p>PupPals Adoption Centre</p>
+                        </li>
+                        <li>
+                            <i class="bx bx-globe"></i>
+                            <p>puppals.co</p>
+                        </li>
+                        <li>
+                            <i class='bx bxl-instagram' ></i>
+                            <p>@puppalsco</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-text">
+                    <p>© Copyrights are Reserved by Ryan Jhexter C. Valencia!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+   
+        function myMenuFunction() {
+         var i = document.getElementById("navMenu");
+     
+         if(i.className === "nav-menu") {
+             i.className += " responsive";
+         } else {
+             i.className = "nav-menu";
+         }
+        }
+      
+     </script>
+</body>
+</html>

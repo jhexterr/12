@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>PupPals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper1">
+        <nav class="nav">
+            <div class="nav-logo">
+                <p>PupPals</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="./home.html" class="link active">Home</a></li>
+                    <li><a href="./about.html" class="link">About</a></li>
+                    <li><a href="./dogs.html" class="link">Dogs</a></li>
+                    <li><a href="./contact.html" class="link">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <section class="home">
+        <div class="container">
+            <div class="home-wrapper">
+                <div class="blank">
+                    <span></span>
+                </div>
+                <div class="home-text">
+                    <p class="big">Adopt a dog now!</p>
+                    <p>There are so many dogs in shelters and rescues waiting for their forever homes. By adopting a dog, you can give them a second chance at happiness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+   
+        function myMenuFunction() {
+         var i = document.getElementById("navMenu");
+     
+         if(i.className === "nav-menu") {
+             i.className += " responsive";
+         } else {
+             i.className = "nav-menu";
+         }
+        }
+      
+     </script>
+</body>
+</html>
